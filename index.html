@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Student Biodata Form</h2>
+            <p>Fill in your details below to complete your biodata</p>
+        </div>
+
+        <form class="form-body" id="biodata-form">
+            <div class="group">
+                <div class="group-head">
+                    <div class="num">1</div>
+                    <div class="group-title">
+                        <h3>Personal Information</h3>
+                        <p>Tell us about yourself</p>
+                    </div>
+                </div>
+
+                <div class="personal-entries">
+                    <div class="entry">
+                        <label for="">Full Name <span>*</span></label>
+                        <input type="text" name="" id="name" placeholder="Enter your full name">
+                    </div>
+
+                    <div class="entry">
+                        <label for="">Date of Birth <span>*</span></label>
+                        <input type="date" name="" id="dob">
+                    </div>
+
+                    <div class="entry">
+                        <label for="">Gender <span>*</span></label>
+                        <select name="" id="gender">
+                            <option value="" disabled selected hidden class="disabled-option">Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="entry">
+                        <label for="">Email Address <span>*</span></label>
+                        <input type="email" name="" id="email" placeholder="you@example.com">
+                    </div>
+
+                    <div class="entry">
+                        <label for="">Phone Number <span>*</span></label>
+                        <input type="tel" name="" id="phone" placeholder="Enter 11 digit phone number">
+                    </div>
+
+                    <div class="entry">
+                        <label for="">Residential address <span>*</span></label>
+                        <textarea type="text" name="" id="address" placeholder="Enter your residential address"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-head">
+                    <div class="num">2</div>
+                    <div class="group-title">
+                        <h3>Background Information</h3>
+                        <p>Provide your state of origin</p>
+                    </div>
+                </div>
+
+                <div class="entries">
+                    <div class="entry">
+                        <label for="">State of Origin <span>*</span></label>
+                        <input type="text" name="" id="state" placeholder="Enter your state of origin">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-head">
+                    <div class="num">3</div>
+                    <div class="group-title">
+                        <h3>Academic Information</h3>
+                        <p>Tell us about your school details</p>
+                    </div>
+                </div>
+
+                <div class="entries">
+                    <div class="entry">
+                        <label for="">Matric Number <span>*</span></label>
+                        <input type="text" name="" id="matno" placeholder="Enter your matric number">
+                    </div>
+
+                    <div class="entry">
+                        <label for="">Department <span>*</span></label>
+                        <select name="" id="department">
+                            <option value="" disabled selected hidden>Select your department</option class="disabled-option">
+                            <option value="SoftwareEngineering">Software Engineering</option>
+                            <option value="ComputerScience">Computer Science</option>
+                            <option value="MedicineandSurgery">Medicine and Surgery</option>
+                            <option value="Law">Law</option>
+                            <option value="Pharmacy">Pharmacy</option>
+                            <option value="Accounting">Accounting</option>
+                        </select>
+                    </div>
+
+                    <div class="entry">
+                        <label for="">Level <span>*</span></label>
+                        <select name="" id="level">
+                            <option value="" disabled selected hidden class="disabled-option">Select your level</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit">
+                <button class="submit" type="submit">Submit</button>
+                <p id="message"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
